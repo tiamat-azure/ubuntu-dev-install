@@ -1,5 +1,9 @@
 # Configure Linux Elementary OS for development
 
+![Header](img/header.png)
+
+This project is intended to log software, libraries and frameworks installation on Linux Elementary OS.
+
 ## Install Brave browser
 
 from : [installing-brave#linux](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
