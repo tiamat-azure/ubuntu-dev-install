@@ -25,8 +25,14 @@ sudo apt install brave-browser -y
 ## Install git
 
 ```bash
+# Install git
 sudo apt install git -y
 
+# configure
+git config --global user.name "Tiamat"
+git config --global user.email tiamat.azure@gmail.com
+
+# Check version
 git --version
 ```
 
@@ -87,7 +93,10 @@ alias gac="git add . && git commit -a -m "
 alias nis="npm install --save "
 
 ## VS Code
-alias coder='code -n .'
+alias coden='code -n .'
+alias codel='code --list-extensions'
+alias codei='code --install-extension'
+alias codeu='code --uninstall-extension'
 
 ## get rid of command not found ##
 alias cd..='cd ..'
@@ -181,10 +190,20 @@ And enable the Visual Studio Code repository by typing:
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 ```
 
-install the latest version of Visual Studio Code with:
+Install the latest version of Visual Studio Code with:
 
 ```bash
 aptui code
+```
+
+Install VS Code extensions
+
+```bash
+    code --install-extension shd101wyy.markdown-preview-enhanced \
+&&  code --install-extension vscjava.vscode-java-pack \
+&&  code --install-extension pivotal.vscode-boot-dev-pack \
+&&  code --install-extension davidanson.vscode-markdownlint \
+&&  code --install-extension formulahendry.docker-extension-pack
 ```
 
 ## Install SDKMAN
