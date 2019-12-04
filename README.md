@@ -199,11 +199,15 @@ aptui code
 Install VS Code extensions
 
 ```bash
-    code --install-extension shd101wyy.markdown-preview-enhanced \
-&&  code --install-extension vscjava.vscode-java-pack \
-&&  code --install-extension pivotal.vscode-boot-dev-pack \
-&&  code --install-extension davidanson.vscode-markdownlint \
-&&  code --install-extension formulahendry.docker-extension-pack
+# Install extensions
+    codei shd101wyy.markdown-preview-enhanced \
+&&  codei vscjava.vscode-java-pack \
+&&  codei pivotal.vscode-boot-dev-pack \
+&&  codei davidanson.vscode-markdownlint \
+&&  codei formulahendry.docker-extension-pack
+
+# Verify
+codel
 ```
 
 ## Install SDKMAN
