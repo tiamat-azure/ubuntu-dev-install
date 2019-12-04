@@ -243,3 +243,13 @@ Verify java version
 java -version
 javac -version
 ```
+
+## Install Pinta
+
+```bash
+# Add repository
+sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
+
+# Update and Install
+aptui pinta
+```
