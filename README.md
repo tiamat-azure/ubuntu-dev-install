@@ -127,6 +127,7 @@ alias aptu="sudo apt update"
 alias aptui="sudo apt update && sudo apt install -y "
 alias aptfu="sudo apt full-upgrade -y"
 alias aptr="sudo apt auto-remove -y"
+alias aptrepo="sudo add-apt-repository"
 
 # update packages
 alias apt-get="sudo apt-get"
