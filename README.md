@@ -126,7 +126,8 @@ alias apti="sudo apt install -y"
 alias aptu="sudo apt update"
 alias aptui="sudo apt update && sudo apt install -y "
 alias aptfu="sudo apt full-upgrade -y"
-alias aptr="sudo apt auto-remove -y"
+alias aptar="sudo apt auto-remove -y"
+alias aptrepo="sudo add-apt-repository"
 
 # update packages
 alias apt-get="sudo apt-get"
@@ -187,7 +188,7 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 And enable the Visual Studio Code repository by typing:
 
 ```bash
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+aptrepo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 ```
 
 Install the latest version of Visual Studio Code with:
@@ -249,7 +250,7 @@ javac -version
 
 ```bash
 # Add repository
-sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
+aptrepo ppa:pinta-maintainers/pinta-stable
 
 # Update and Install
 aptui pinta
