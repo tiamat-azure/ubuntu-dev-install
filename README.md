@@ -204,7 +204,8 @@ Install VS Code extensions
 &&  codei vscjava.vscode-java-pack \
 &&  codei pivotal.vscode-boot-dev-pack \
 &&  codei davidanson.vscode-markdownlint \
-&&  codei formulahendry.docker-extension-pack
+&&  codei formulahendry.docker-extension-pack \
+&&  codei deitry.apt-source-list-syntax
 
 # Verify
 codel
