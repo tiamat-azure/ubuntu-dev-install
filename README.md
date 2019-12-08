@@ -29,7 +29,7 @@ sudo apt install brave-browser -y
 sudo apt install git -y
 
 # configure
-git config --global user.name "Tiamat" \
+git config --global user.name tiamat.azure@gmail.com \
 && git config --global user.email tiamat.azure@gmail.com
 
 # Check version
