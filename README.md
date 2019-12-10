@@ -29,7 +29,7 @@ sudo apt install brave-browser -y
 sudo apt install git -y
 
 # configure
-git config --global user.name "Tiamat" \
+git config --global user.name tiamat.azure@gmail.com \
 && git config --global user.email tiamat.azure@gmail.com
 
 # Check version
@@ -126,7 +126,7 @@ alias apti="sudo apt install -y"
 alias aptu="sudo apt update"
 alias aptui="sudo apt update && sudo apt install -y "
 alias aptfu="sudo apt full-upgrade -y"
-alias aptr="sudo apt auto-remove -y"
+alias aptar="sudo apt auto-remove -y"
 alias aptrepo="sudo add-apt-repository"
 
 # update packages
@@ -188,7 +188,7 @@ wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add
 And enable the Visual Studio Code repository by typing:
 
 ```bash
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+aptrepo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 ```
 
 Install the latest version of Visual Studio Code with:
@@ -205,7 +205,8 @@ Install VS Code extensions
 &&  codei vscjava.vscode-java-pack \
 &&  codei pivotal.vscode-boot-dev-pack \
 &&  codei davidanson.vscode-markdownlint \
-&&  codei formulahendry.docker-extension-pack
+&&  codei formulahendry.docker-extension-pack \
+&&  codei deitry.apt-source-list-syntax
 
 # Verify
 codel
@@ -249,7 +250,7 @@ javac -version
 
 ```bash
 # Add repository
-sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
+aptrepo ppa:pinta-maintainers/pinta-stable
 
 # Update and Install
 aptui pinta
