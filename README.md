@@ -32,7 +32,7 @@ sudo apt install git -y
 git config --global user.name tiamat.azure@gmail.com \
 && git config --global user.email tiamat.azure@gmail.com
 
-# Check version
+# Check versions
 git --version
 
 # Configure cache
