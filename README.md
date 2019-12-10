@@ -34,6 +34,11 @@ git config --global user.name tiamat.azure@gmail.com \
 
 # Check version
 git --version
+
+# Configure cache
+git config credential.helper cache
+git config credential.helper 'cache --timeout=2600000'
+git config --list
 ```
 
 ## Install ZSH
