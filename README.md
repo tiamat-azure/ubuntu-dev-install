@@ -323,3 +323,13 @@ nvm install v12.13.1
 # Check
 node -v
 ```
+
+## Install JHipster (with npm)
+
+```bash
+# Install latest JHipster generator
+npm install -g generator-jhipster
+
+# Install latest Yo generator
+npm install -g yo@latest
+```
