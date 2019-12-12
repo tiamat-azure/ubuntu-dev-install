@@ -260,3 +260,38 @@ aptrepo ppa:pinta-maintainers/pinta-stable
 # Update and Install
 aptui pinta
 ```
+
+## Install Docker
+
+doc: [how-to-install-and-use-docker-on-ubuntu-18-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+
+```bash
+# First, update your existing list of packages:
+aptu
+
+# Next, install a few prerequisite packages:
+apti apt-transport-https ca-certificates curl software-properties-common
+
+# Then add the GPG key for the official Docker repository to your system:
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# Add the Docker repository to APT sources:
+aptrepo "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+# Next, update the package database with the Docker packages from the newly added repo:
+aptu
+
+# Make sure you are about to install from the Docker repo instead of the default Ubuntu repo:
+apt-cache policy docker-ce
+
+# Finally, install Docker:
+apti docker-ce
+
+# Check that it’s running:
+sudo systemctl status docker
+sudo docker ps
+
+# Executing the docker command without sudo (optional)
+sudo usermod -aG docker ${USER}
+
+```
