@@ -342,4 +342,13 @@ mkcd first-app
 
 # Launch JHipster CLI
 jhipster
+
+# Answer questions
+...
+
+# Build front
+npm start
+
+# Build back
+gradle
 ```
