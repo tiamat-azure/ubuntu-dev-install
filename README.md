@@ -308,6 +308,14 @@ sudo usermod -aG docker ${USER}
 id -nG
 ```
 
+## Install Docker-Compose
+
+Doc: [docker-compose-install](https://docs.docker.com/compose/install/)
+
+```bash
+
+```
+
 ## Install NVM
 
 ```bash
