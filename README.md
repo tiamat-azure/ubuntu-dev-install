@@ -333,3 +333,13 @@ npm install -g generator-jhipster
 # Install latest Yo generator
 npm install -g yo@latest
 ```
+
+## First JHipster app
+
+```bash
+# Create new directory
+mkcd first-app
+
+# Launch JHipster CLI
+jhipster
+```
