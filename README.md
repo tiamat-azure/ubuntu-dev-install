@@ -300,3 +300,17 @@ id -nG
 
 ## Install NVM
 
+```bash
+# Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+
+# Check lts versions available
+nvm ls-remote --lts | grep Latest
+
+# Install lastest LTS node version
+nvm install v12.13.1
+
+# Check
+node -v
+```
+
