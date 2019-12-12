@@ -251,6 +251,16 @@ java -version
 javac -version
 ```
 
+## Install Gradle
+
+```bash
+# Check available gradle versions
+sdk ls gradle
+
+# Install specific version
+sdk i gradle 6.0.1
+```
+
 ## Install Pinta
 
 ```bash
@@ -313,4 +323,3 @@ nvm install v12.13.1
 # Check
 node -v
 ```
-
