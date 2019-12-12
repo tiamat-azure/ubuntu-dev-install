@@ -4,7 +4,7 @@
 
 This project is intended to log software, libraries and frameworks installation on Linux Elementary OS.
 
-## Install Brave browser
+## Install Brave Browser
 
 from : [installing-brave#linux](https://brave-browser.readthedocs.io/en/latest/installing-brave.html#linux)
 
@@ -22,7 +22,7 @@ sudo apt update
 sudo apt install brave-browser -y
 ```
 
-## Install git
+## Install Git
 
 ```bash
 # Install git
@@ -294,4 +294,9 @@ sudo docker ps
 # Executing the docker command without sudo (optional)
 sudo usermod -aG docker ${USER}
 
+# Check
+id -nG
 ```
+
+## Install NVM
+
