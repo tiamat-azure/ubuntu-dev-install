@@ -367,5 +367,5 @@ jhipster
 npm start
 
 # Build back
-gradle
+.gradlew
 ```
