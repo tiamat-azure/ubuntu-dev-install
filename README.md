@@ -217,7 +217,11 @@ Install VS Code extensions
 
 # Verify
 codel
+
+# Upgrade actual VSCode installation
+apti --only-upgrade code
 ```
+
 
 ## Install SDKMAN
 
@@ -376,16 +380,23 @@ npm start
 
 ## Tips
 
-1) JHipster recommends to use [Angular Augury](https://augury.rangle.io/) for debugging Angular application into the browser.
+- JHipster recommends to use [Angular Augury](https://augury.rangle.io/) for debugging Angular application into the browser.
 ![augury-1](img/angular-augury-1.png)
 ![augury-2](img/angular-augury-2.png)
 ![augury-3](img/angular-augury-3.png)
 
-## Troubleshooting
-
-1) Npm start gets error message : "Error: ENOSPC: System limit for number of file watchers reached"
+- How to upgrade VScode to earliest version ?
 
 ```bash
-#Answer
+# Answer
+apti --only-upgrade code
+```
+
+## Troubleshooting
+
+- Npm start gets error message : "Error: ENOSPC: System limit for number of file watchers reached"
+
+```bash
+# Answer
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
