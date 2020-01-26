@@ -362,8 +362,11 @@ mkcd first-app
 jhipster
 
 # Answer questions
-...
+```
 
+![JHipster answers](img/jhi-answers.png)
+
+```bash
 # Build front
 npm start
 
