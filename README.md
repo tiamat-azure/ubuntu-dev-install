@@ -374,6 +374,13 @@ npm start
 ./gradlew -x webpack
 ```
 
+## Tips
+
+1) JHipster recommends to use [Angular Augury](https://augury.rangle.io/) for debugging Angular application into the browser.
+![augury-1](img/angular-augury-1.png)
+![augury-2](img/angular-augury-2.png)
+![augury-3](img/angular-augury-3.png)
+
 ## Troubleshooting
 
 1) Npm start gets error message : "Error: ENOSPC: System limit for number of file watchers reached"
