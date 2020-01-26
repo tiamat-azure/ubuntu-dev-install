@@ -400,3 +400,14 @@ apti --only-upgrade code
 # Answer
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 ```
+
+- By default Jhipster does not install [angular-cli](https://cli.angular.io/). You need to install it manually :
+
+```bash
+# Install
+npm i -g @angular/cli@8.3.20
+
+# The use commands
+ng help
+
+```
