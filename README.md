@@ -371,7 +371,7 @@ jhipster
 npm start
 
 # Build back
-.gradlew
+./gradlew -x webpack
 ```
 
 ## Troubleshooting
