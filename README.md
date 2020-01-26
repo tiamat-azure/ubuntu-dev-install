@@ -133,6 +133,7 @@ alias aptu="sudo apt update"
 alias aptui="sudo apt update && sudo apt install -y "
 alias aptfu="sudo apt full-upgrade -y"
 alias aptar="sudo apt auto-remove -y"
+alias aptsys="sudo apt-get install unattended-upgrades"
 alias aptrepo="sudo add-apt-repository"
 
 # update packages
