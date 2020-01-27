@@ -90,10 +90,10 @@ alias sourcez="source ~/.zshrc"
 alias myip="curl http://ipecho.net/plain; echo"
 
 ## mkdir && cd
-alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo '
+alias mkcd='foo(){ mkdir -p "$1"; cd "$1" }; foo'
 
-## git
-alias gac="git add . && git commit -a -m "
+## git add all, commit with comments then push function
+alias gcp='_gcp(){ git add .; git commit -m "$1"; git push; git status }; _gcp'
 
 ## npm
 alias nis="npm install --save "
@@ -217,11 +217,13 @@ Install VS Code extensions
 
 # Verify
 codel
-
-# Upgrade actual VSCode installation
-apti --only-upgrade code
 ```
 
+Upgrade actual VSCode installation
+
+```bash
+apti --only-upgrade code
+```
 
 ## Install SDKMAN
 
@@ -407,7 +409,7 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 # Install
 npm i -g @angular/cli@8.3.20
 
-# The use commands
+# Then use commands
 ng help
 
 ```
