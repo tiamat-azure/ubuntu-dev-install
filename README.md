@@ -180,10 +180,16 @@ GH_USER="tiamat-azure"
 GH_REPO=""
 GH_TOKEN=""
 
+# Prise en compte de l'option -p dans zsh
+# setopt multios
+
 # Créer une issue sur GitHub
 function issue() {
+
     # Demander les informations nécessaires à l'utilisateur
-    read -p "Issue title: " title
+    # read -p "Issue title: " title
+    echo "Issue title: "
+    read title
     body=""
 
     # Créer l'issue en utilisant l'API GitHub
