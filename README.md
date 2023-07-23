@@ -174,6 +174,22 @@ alias du='du -ch'
 ## Date and Time Aliases
 alias d='date +"%F"'
 alias now='date +"%F %T"'
+
+# GitHub
+GH_USER="tiamat-azure"
+GH_REPO=""
+GH_TOKEN=""
+
+# Créer une issue sur GitHub
+function issue() {
+    # Demander les informations nécessaires à l'utilisateur
+    read -p "Issue title: " title
+    body=""
+
+    # Créer l'issue en utilisant l'API GitHub
+    number=$(curl -s -X POST -H "Authorization: token $GH_TOKEN" -d "{\"title\":\"$title\",\"body\":\"$body\"}" "https://api.github.com/repos/$GH_USER/$GH_REPO/issues" | jq -r '.number')
+    echo "Issue crée #$number"
+}
 ```
 
 ## Install VS Code
