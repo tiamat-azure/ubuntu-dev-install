@@ -41,6 +41,19 @@ git config --global credential.helper 'cache --timeout=2600000'
 git config --global --list
 ```
 
+## Add self-signed CA (optional)
+
+```bash
+# Copier
+sudo cp *.crt /usr/local/share/ca-certificates/
+
+# Vérifier
+ls /usr/local/share/ca-certificates/
+
+# Ajouter
+sudo update-ca-certificates
+```
+
 ## Install ZSH
 
 doc: [instaling-zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
